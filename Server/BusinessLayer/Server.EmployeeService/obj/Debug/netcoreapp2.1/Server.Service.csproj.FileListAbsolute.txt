@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\bin\Debug\netcoreapp2.1\Server.Service.deps.json
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\bin\Debug\netcoreapp2.1\Server.Service.dll
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\bin\Debug\netcoreapp2.1\Server.Service.pdb
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\bin\Debug\netcoreapp2.1\Server.Contracts.dll
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\bin\Debug\netcoreapp2.1\Server.Data.dll
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\bin\Debug\netcoreapp2.1\Server.Data.pdb
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\bin\Debug\netcoreapp2.1\Server.Contracts.pdb
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\obj\Debug\netcoreapp2.1\Server.Service.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\obj\Debug\netcoreapp2.1\Server.Service.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\obj\Debug\netcoreapp2.1\Server.Service.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\obj\Debug\netcoreapp2.1\Server.Service.AssemblyInfo.cs
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\obj\Debug\netcoreapp2.1\Server.Service.csproj.CopyComplete
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\obj\Debug\netcoreapp2.1\Server.Service.dll
+C:\Users\User\source\repos\Server\BusinessLayer\Server.EmployeeService\obj\Debug\netcoreapp2.1\Server.Service.pdb

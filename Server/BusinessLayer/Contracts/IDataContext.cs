@@ -1,0 +1,7 @@
+﻿namespace Contracts
+{
+    interface IDataContext
+    {
+
+    }
+}

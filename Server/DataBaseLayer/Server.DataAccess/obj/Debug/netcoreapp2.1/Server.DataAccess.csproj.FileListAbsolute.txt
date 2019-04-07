@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.DataAccess.deps.json
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.DataAccess.dll
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\obj\Debug\netcoreapp2.1\Server.DataAccess.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\obj\Debug\netcoreapp2.1\Server.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\obj\Debug\netcoreapp2.1\Server.DataAccess.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\obj\Debug\netcoreapp2.1\Server.DataAccess.AssemblyInfo.cs
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.DataAccess.runtimeconfig.json
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.DataAccess.runtimeconfig.dev.json
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.DataAccess.pdb
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.Data.dll
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.Data.pdb
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\obj\Debug\netcoreapp2.1\Server.DataAccess.csproj.CopyComplete
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\obj\Debug\netcoreapp2.1\Server.DataAccess.dll
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\obj\Debug\netcoreapp2.1\Server.DataAccess.pdb
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.Contracts.dll
+C:\Users\User\source\repos\Server\DataBaseLayer\Server.DataAccess\bin\Debug\netcoreapp2.1\Server.Contracts.pdb
