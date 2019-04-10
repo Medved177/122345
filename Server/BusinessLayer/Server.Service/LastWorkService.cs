@@ -16,8 +16,6 @@ namespace Server.Service
         }
         public int Add(DbLastWork lastWork)
         {
-            if (lastWork.Employee == null)
-                return 0;
             var b = _context.Create(lastWork);
             return b;
         }

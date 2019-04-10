@@ -25,11 +25,6 @@ namespace Server.Service
 
         public int Add (DbEmployee employee) 
         {
-            if ((employee.Name == null) ||
-                (employee.Family == null) || employee.Email == null)
-            {
-                return 0;
-            }
             var b = _context.Create (employee);
             return b;
         }

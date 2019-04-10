@@ -16,8 +16,6 @@ namespace Server.Service
         }
         public int Add(DbResult Result)
         {
-            if ((Result.Result1 == null) || (Result.Employee == null) || (Result.Vacancy == null))
-                return 0;
             var b = _context.Create(Result);
             return b;
         }

@@ -16,11 +16,6 @@ namespace Server.Service
         }
         public int Add(DbEducation education)
         {
-            if ((education.Type == null) 
-                || (education.University == null) 
-                || (education.Specialty == null) 
-                || (education.Employee == null))
-                return 0;
             var b = _context.Create(education);
             return b;
         }
