@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using Server.DataAccess;
 using Server.Contracts;
 using Server.Service;
+using FluentValidation.AspNetCore;
 
 namespace Server
 {
@@ -30,7 +31,9 @@ namespace Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options => options.UseSqlServer(@"Server=USER-PC;Database=Selection;Trusted_Connection=True;"));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddFluentValidation(fvc =>
+                fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
             services.AddScoped<IDataContext, DataContext>();
             services.AddScoped<IEmployeeService,EmployeeService>();
             services.AddScoped<IVacancyService, VacancySecrvice>();

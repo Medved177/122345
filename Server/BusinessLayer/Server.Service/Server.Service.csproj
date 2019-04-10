@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataBaseLayer\Server.Date\Server.Data.csproj" />
+    <ProjectReference Include="..\Server.Contracts\Server.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
