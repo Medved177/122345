@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Identity.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using FluentValidation.AspNetCore;
 
 namespace Identity
 {
@@ -24,19 +25,20 @@ namespace Identity
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationContext>(options =>
+            options.UseSqlServer(@"Server=USER-PC;Database=UserStoredb;Trusted_Connection=True;"));
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<ApplicationContext>();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddFluentValidation(fvc =>
+                fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
             services.Configure<CookiePolicyOptions>(options =>
             {
-                
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
-            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Server=USER-PC;Database=UserStoredb;Trusted_Connection=True;"));
-            services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<ApplicationContext>();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -47,14 +49,11 @@ namespace Identity
             }
             else
             {
-                app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
-
+            app.UseAuthentication(); 
             app.UseMvc();
         }
     }

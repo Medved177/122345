@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Identity.Models
 {
-    public class ApplicationContext : IdentityDbContext<User>
+    public class ApplicationContext : IdentityDbContext<IdentityUser>
     {
-        public ApplicationContext (DbContextOptions<ApplicationContext> options) : base(options)
+        public ApplicationContext()
         {
-            Database.EnsureCreated();
+
         }
-        public DbSet<User> Users { get; set; }
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+        {
+
+        }
+        public DbSet<IdentityUser> IdentityUsers { get; set; }
     }
 }
