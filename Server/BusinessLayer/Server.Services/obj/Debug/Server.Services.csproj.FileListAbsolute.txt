@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\bin\Debug\Server.Services.dll
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\bin\Debug\Server.Services.pdb
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\bin\Debug\Server.Contracts.dll
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\bin\Debug\Server.Data.dll
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\bin\Debug\Server.Data.pdb
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\bin\Debug\Server.Contracts.pdb
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\obj\Debug\Server.Services.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\obj\Debug\Server.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\obj\Debug\Server.Services.csproj.CopyComplete
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\obj\Debug\Server.Services.dll
+C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Services\obj\Debug\Server.Services.pdb
