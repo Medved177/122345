@@ -23,10 +23,11 @@ namespace Server.Services
             return result;
         }
 
-        public IQueryable<DbResult> List()
+        public PagedResult<DbResult> List(DataRequest request)
         {
             var list = _context.GetAll<DbResult>();
-            return list;
+            var result = list.ToPagedResult<DbResult>(request);
+            return result;
         }
 
         public int Remove(int id)

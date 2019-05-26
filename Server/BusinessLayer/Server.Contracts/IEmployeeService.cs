@@ -5,7 +5,7 @@ namespace Server.Contracts
 {
     public interface IEmployeeService
     {
-        IQueryable<DbEmployee> List();
+        PagedResult<DbEmployee> List(DataRequest request);
         int Add(DbEmployee employee);
         int Update(DbEmployee employee);
         int Remove(int id);

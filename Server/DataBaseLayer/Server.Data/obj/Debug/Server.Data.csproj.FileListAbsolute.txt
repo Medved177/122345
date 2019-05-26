@@ -4,3 +4,9 @@ C:\Users\User\Desktop\Server\Server\DataBaseLayer\Server.Data\obj\Debug\Server.D
 C:\Users\User\Desktop\Server\Server\DataBaseLayer\Server.Data\obj\Debug\Server.Data.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\Server\Server\DataBaseLayer\Server.Data\obj\Debug\Server.Data.dll
 C:\Users\User\Desktop\Server\Server\DataBaseLayer\Server.Data\obj\Debug\Server.Data.pdb
+C:\Users\User\Documents\GitHub\122345\Server\DataBaseLayer\Server.Data\bin\Debug\Server.Data.dll
+C:\Users\User\Documents\GitHub\122345\Server\DataBaseLayer\Server.Data\bin\Debug\Server.Data.pdb
+C:\Users\User\Documents\GitHub\122345\Server\DataBaseLayer\Server.Data\obj\Debug\Server.Data.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\122345\Server\DataBaseLayer\Server.Data\obj\Debug\Server.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\122345\Server\DataBaseLayer\Server.Data\obj\Debug\Server.Data.dll
+C:\Users\User\Documents\GitHub\122345\Server\DataBaseLayer\Server.Data\obj\Debug\Server.Data.pdb

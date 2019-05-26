@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Application", "Server.Application\Server.Application.csproj", "{15FD0295-5003-455E-98FA-2A3EC0646FE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Application", "Server.Application\Server.Application.csproj", "{15FD0295-5003-455E-98FA-2A3EC0646FE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Identity", "Server.Identity\Server.Identity.csproj", "{D994A12E-0715-472A-93BB-07BBD8219850}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Identity", "Server.Identity\Server.Identity.csproj", "{D994A12E-0715-472A-93BB-07BBD8219850}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBaseLayer", "DataBaseLayer", "{CC620EED-7B9F-4D42-9B5B-8DF8B4D3885F}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Contracts", "BusinessLayer\Server.Contracts\Server.Contracts.csproj", "{EBCCC081-37F0-4FC4-B1B0-03C770F675FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Services", "BusinessLayer\Server.Services\Server.Services.csproj", "{28550A5F-2BFF-4EA9-8003-FCBF3D93D9A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Client", "Server.Client\Server.Client.csproj", "{1686DD87-70DA-4124-A49D-D22CCFAEC299}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{28550A5F-2BFF-4EA9-8003-FCBF3D93D9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28550A5F-2BFF-4EA9-8003-FCBF3D93D9A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28550A5F-2BFF-4EA9-8003-FCBF3D93D9A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1686DD87-70DA-4124-A49D-D22CCFAEC299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1686DD87-70DA-4124-A49D-D22CCFAEC299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1686DD87-70DA-4124-A49D-D22CCFAEC299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1686DD87-70DA-4124-A49D-D22CCFAEC299}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

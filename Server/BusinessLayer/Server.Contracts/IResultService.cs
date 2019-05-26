@@ -5,7 +5,7 @@ namespace Server.Contracts
 {
     public interface IResultService
     {
-        IQueryable<DbResult> List();
+        PagedResult<DbResult> List(DataRequest request);
         int Add(DbResult Result);
         int Update(DbResult Result);
         int Remove(int id);

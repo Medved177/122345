@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataRequest.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="IDataContext.cs" />
     <Compile Include="IEducationService.cs" />
     <Compile Include="IEmployeeService.cs" />
     <Compile Include="ILastWorkService.cs" />
     <Compile Include="IResultService.cs" />
     <Compile Include="IVacancyService.cs" />
+    <Compile Include="PagedResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -20,19 +20,10 @@ namespace Server.Application.Controllers
             _service = service;
         }
         [HttpGet]
-        public ActionResult Get(int id)
+        public ActionResult Get([FromQuery]DataRequest request)
         {
-            if (id == 0)
-            {
-                var result1 = _service.List();
-                return Ok(result1.ToArray());
-            }
-            else
-            {
-                var result = _service.Find(id);
-                if (result != null) return Ok(result);
-            }
-            return BadRequest();
+            var result = _service.List(request);
+            return Ok(result);
         }
 
         [HttpPost]

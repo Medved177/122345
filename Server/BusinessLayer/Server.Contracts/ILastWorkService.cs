@@ -5,7 +5,7 @@ namespace Server.Contracts
 {
     public interface ILastWorkService
     {
-        IQueryable<DbLastWork> List();
+        PagedResult<DbLastWork> List(DataRequest request);
         int Add(DbLastWork lastWork);
         int Update(DbLastWork lastWork);
         int Remove(int id);

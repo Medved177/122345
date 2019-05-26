@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+@model Server.Data.DbEmployee[]
+
+
+<div>
+    <h3>Testing</h3>
+    @if (Model != null)
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>Работники</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Family</td>
+                        <td>@item.Name</td>
+                        <td>@item.Mname</td>
+                        <td>@item.Email</td>
+                        <td>@item.Year</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

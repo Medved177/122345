@@ -23,10 +23,11 @@ namespace Server.Services
             return result;
         }
 
-        public IQueryable<DbLastWork> List()
+        public PagedResult<DbLastWork> List(DataRequest request)
         {
             var list = _context.GetAll<DbLastWork>();
-            return list;
+            var result = list.ToPagedResult<DbLastWork>(request);
+            return result;
         }
 
         public int Remove(int id)
@@ -34,8 +35,7 @@ namespace Server.Services
             var b = _context.Delete<DbLastWork>(id);
             return b;
         }
-
-        public int Update(DbLastWork lastWork)
+	public int Update(DbLastWork lastWork)
         {
             var rem = _context.Find<DbLastWork>(lastWork.Id);
             if (rem == null) return 0;
@@ -45,5 +45,6 @@ namespace Server.Services
             var b = _context.Update(rem);
             return b;
         }
+        
     }
 }

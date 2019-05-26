@@ -5,7 +5,7 @@ namespace Server.Contracts
 {
     public interface IEducationService
     {
-        IQueryable<DbEducation> List();
+        PagedResult<DbEducation> List(DataRequest request);
         int Add(DbEducation education);
         int Update(DbEducation education);
         int Remove(int id);

@@ -13,7 +13,6 @@ namespace Server.Application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("AllowAllOrigin")]
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeService _service;
@@ -24,19 +23,19 @@ namespace Server.Application.Controllers
         }
         
         [HttpGet]
-        public ActionResult Get(int id)
+        public ActionResult Get([FromQuery]DataRequest request)
         {
-            if (id == 0)
-            {
-                var result1 = _service.List();
-                return Ok(result1.ToArray());
-            }
-            else
-            {
-                var result = _service.Find(id);
-                if (result != null) return Ok(result);
-            }
-            return BadRequest();
+            var result = _service.List(request);
+            return Ok(result);
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult GetById(int id)
+        {
+            if (id <= 0) return BadRequest();
+            var result = _service.Find(id);
+            if (result != null) return Ok(result);
+            else return BadRequest();
         }
         [HttpPost]
         public ActionResult Post(DbEmployee employee)

@@ -1,6 +1,7 @@
 ﻿using Server.Contracts;
 using Server.Data;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Server.Services
 {
@@ -13,10 +14,11 @@ namespace Server.Services
             _context = context;
         }
 
-        public IQueryable<DbEmployee> List()
+        public PagedResult<DbEmployee> List(DataRequest request)
         {
             var list = _context.GetAll<DbEmployee>();
-            return list;
+            var result = list.ToPagedResult<DbEmployee>(request);
+            return result;
         }
 
         public int Add(DbEmployee employee)

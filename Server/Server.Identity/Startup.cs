@@ -51,20 +51,6 @@ namespace Server.Identity
             });
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IDataContext, DataContext>();
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAllOrigin",
-                    builder => builder
-                    .AllowAnyOrigin()
-                    .AllowAnyHeader()
-                    .AllowAnyMethod()
-                    .AllowAnyOrigin());
-            });
-            //services.Configure<MvcOptions>(options =>
-            //{
-            //    options.Filters.Add(new CorsAuthorizationFilterFactory("AllowAllOrigin"));
-            //});
-
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -78,7 +64,6 @@ namespace Server.Identity
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
             app.UseAuthentication();
             app.UseMvc();
         }

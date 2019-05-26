@@ -33,19 +33,19 @@ namespace Server.Identity.Controllers
             if (result.Succeeded)
             {
                 //var employee = new DbEmployee
-                //{
-                //    Email = model.Email,
+                //  { Email = model.Email ,
                 //    Family = model.Family,
                 //    Name = model.Name,
                 //    Mname = model.Mname,
-                //    Year = model.Year
-                //};
+                //    Year = model.Year  };
                 //_service.Add(employee);
                 await _signInManager.SignInAsync(user, false);
                 return Ok();
             }
             else return BadRequest();
         }
+
+
         [Authorize]
         [HttpGet]
         public IActionResult Test()

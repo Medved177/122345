@@ -7,3 +7,12 @@ C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Contracts\obj\Debug\Ser
 C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.csproj.CopyComplete
 C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.dll
 C:\Users\User\Desktop\Server\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.pdb
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\bin\Debug\Server.Contracts.dll
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\bin\Debug\Server.Contracts.pdb
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\bin\Debug\Server.Data.dll
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\bin\Debug\Server.Data.pdb
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.dll
+C:\Users\User\Documents\GitHub\122345\Server\BusinessLayer\Server.Contracts\obj\Debug\Server.Contracts.pdb

@@ -5,7 +5,7 @@ namespace Server.Contracts
 {
     public interface IVacancyService
     {
-        IQueryable<DbVacancy> List();
+        PagedResult<DbVacancy> List(DataRequest request);
         int Add(DbVacancy vacancy);
         int Update(DbVacancy vacancy);
         int Remove(int id);
