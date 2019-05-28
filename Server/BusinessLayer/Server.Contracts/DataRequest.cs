@@ -5,7 +5,7 @@
         public DataRequest()
         {
             Page = 1;
-            PageSize = 10;
+            PageSize = 1;
         }
 
         public int Page { get; set; }

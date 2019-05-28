@@ -1,0 +1,54 @@
+﻿@model Server.Contracts.PagedResult<Server.Data.DbEmployee>
+
+@{
+    string back = "button paging__button";
+    string backEvent = $"Move({Model.Page - 1})";
+    string next = "button paging__button";
+    string nextEvent = $"Move({Model.Page + 1})";
+
+    if (Model.Page == 1)
+    {
+        back = $"{back} paging__button_disabled";
+        backEvent = string.Empty;
+    }
+
+    if (Model.Page == Model.Total)
+    {
+        next = $"{next} paging__button_disabled";
+        nextEvent = string.Empty;
+    }
+}
+
+
+<div class="section__header">
+    <h2>Пользователи</h2>
+</div>
+<div class="list-container">
+    @if (Model.Data != null)
+    {
+        for (int i = 0; i < Model.Data.Length; i++)
+        {
+            <article class="user-info">
+                <div class="user-info__inner">
+                    <input type="hidden" value=@Model.Data[i].Id>
+                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Family" />
+                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Name" />
+                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Mname" />
+                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Year" />
+                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Email" />
+                </div>
+            </article>
+        }
+    }
+</div>
+<div class="paging">
+    <div class="paging__container">
+        <button class="@back" type="button" onclick="@backEvent">
+            <img src="~/images/back.png" alt="move back" />
+        </button>
+        <button class="@next" type="button" onclick="@nextEvent">
+            <img src="~/images/next.png" alt="move next" />
+        </button>
+        <span class="paging__info">@Model.Page из @Model.Total</span>
+    </div>
+</div>
