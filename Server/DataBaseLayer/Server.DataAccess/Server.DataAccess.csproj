@@ -129,6 +129,10 @@
     <Compile Include="Migrations\20190427211250_New.designer.cs">
       <DependentUpon>20190427211250_New.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20190529194359_start.cs" />
+    <Compile Include="Migrations\20190529194359_start.designer.cs">
+      <DependentUpon>20190529194359_start.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\DataContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

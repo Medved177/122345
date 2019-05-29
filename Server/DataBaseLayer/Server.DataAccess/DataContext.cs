@@ -9,20 +9,28 @@ namespace Server.DataAccess
 {
     public class DataContext : DbContext, IDataContext
     {
-        public DataContext()
-        {
-
-        }
-        public DataContext(DbContextOptions<DataContext> options) : base(options)
-        {
-
-        }
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<DbEmployee> Employees { get; set; }
         public DbSet<DbEducation> Education { get; set; }
         public DbSet<DbVacancy> Vacancies { get; set; }
         public DbSet<DbResult> Results { get; set; }
         public DbSet<DbLastWork> LastWork { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<DbEmployee>().HasData(
+                new DbEmployee[]
+                {
+                    new DbEmployee { Id = 1,Family = "Иванов", Name = "Иван",  Mname = "Иванович" , Email = "Ivanov@mail.ru",Year = 25 },
+                    new DbEmployee { Id = 2, Family = "Петров", Name = "Петр",  Mname = "Петрович" , Email = "Petrov@mail.ru",Year = 24 },
+                    new DbEmployee { Id = 3, Family = "Николайченко", Name = "Николай",  Mname = "Николаевич" , Email = "Nick@mail.ru",Year = 25},
+                    new DbEmployee { Id = 4, Family = "Борисов", Name = "Сергей",  Mname = "Борисович" , Email = "Borisov@mail.ru",Year = 30},
+                    new DbEmployee { Id = 5, Family = "Антонова", Name = "Антонина",  Mname = "Степановна" , Email = "Antonova@mail.ru",Year = 27},
+                });
+            base.OnModelCreating(modelBuilder);
+        }
+
 
         public int Create<T>(T model) where T : class, new()
         {

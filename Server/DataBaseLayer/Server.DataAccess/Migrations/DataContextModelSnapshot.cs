@@ -61,6 +61,14 @@ namespace Server.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
+
+                    b.HasData(
+                        new { Id = 1, Email = "Ivanov@mail.ru", Family = "Иванов", Mname = "Иванович", Name = "Иван", Year = 25 },
+                        new { Id = 2, Email = "Petrov@mail.ru", Family = "Петров", Mname = "Петрович", Name = "Петр", Year = 24 },
+                        new { Id = 3, Email = "Nick@mail.ru", Family = "Николайченко", Mname = "Николаевич", Name = "Николай", Year = 25 },
+                        new { Id = 4, Email = "Borisov@mail.ru", Family = "Борисов", Mname = "Борисович", Name = "Сергей", Year = 30 },
+                        new { Id = 5, Email = "Antonova@mail.ru", Family = "Антонова", Mname = "Степановна", Name = "Антонина", Year = 27 }
+                    );
                 });
 
             modelBuilder.Entity("Server.Data.DbLastWork", b =>
