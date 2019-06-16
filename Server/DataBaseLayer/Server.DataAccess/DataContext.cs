@@ -16,17 +16,18 @@ namespace Server.DataAccess
         public DbSet<DbVacancy> Vacancies { get; set; }
         public DbSet<DbResult> Results { get; set; }
         public DbSet<DbLastWork> LastWork { get; set; }
+        public DbSet<DbTest> Tests { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<DbEmployee>().HasData(
-                new DbEmployee[]
+            modelBuilder.Entity<DbVacancy>().HasData(
+                new DbVacancy[]
                 {
-                    new DbEmployee { Id = 1,Family = "Иванов", Name = "Иван",  Mname = "Иванович" , Email = "Ivanov@mail.ru",Year = 25 },
-                    new DbEmployee { Id = 2, Family = "Петров", Name = "Петр",  Mname = "Петрович" , Email = "Petrov@mail.ru",Year = 24 },
-                    new DbEmployee { Id = 3, Family = "Николайченко", Name = "Николай",  Mname = "Николаевич" , Email = "Nick@mail.ru",Year = 25},
-                    new DbEmployee { Id = 4, Family = "Борисов", Name = "Сергей",  Mname = "Борисович" , Email = "Borisov@mail.ru",Year = 30},
-                    new DbEmployee { Id = 5, Family = "Антонова", Name = "Антонина",  Mname = "Степановна" , Email = "Antonova@mail.ru",Year = 27},
+                    new DbVacancy { Id = 1,Name = "Младший программист", Salary = 25000,  Education = "Высшее" , Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);",Task = "работать с большими и сложными проектами" },
+                    new DbVacancy { Id = 2,Name = "Младший программист", Salary = 25000,  Education = "Высшее" , Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);",Task = "работать с большими и сложными проектами" },
+                    new DbVacancy { Id = 3,Name = "Младший программист", Salary = 25000,  Education = "Высшее" , Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);",Task = "работать с большими и сложными проектами" },
+                    new DbVacancy { Id = 4,Name = "Младший программист", Salary = 25000,  Education = "Высшее" , Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);",Task = "работать с большими и сложными проектами" },
+                    new DbVacancy { Id = 5,Name = "Младший программист", Salary = 25000,  Education = "Высшее" , Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);",Task = "работать с большими и сложными проектами" },
                 });
             base.OnModelCreating(modelBuilder);
         }

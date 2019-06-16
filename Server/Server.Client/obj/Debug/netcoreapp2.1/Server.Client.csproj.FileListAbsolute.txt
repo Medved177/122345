@@ -26,4 +26,9 @@ C:\Users\User\Documents\GitHub\122345\Server\Server.Client\bin\Debug\netcoreapp2
 C:\Users\User\Documents\GitHub\122345\Server\Server.Client\bin\Debug\netcoreapp2.1\Server.Data.pdb
 C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Server.Client.Views.pdb
 C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Server.Client.csproj.CopyComplete
-C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\Employees.g.cshtml.cs
+C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddEmployee.g.cshtml.cs
+C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\Section.g.cshtml.cs
+C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddEducation.g.cshtml.cs
+C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddWork.g.cshtml.cs
+C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\Vacancy.g.cshtml.cs
+C:\Users\User\Documents\GitHub\122345\Server\Server.Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\test.g.cshtml.cs

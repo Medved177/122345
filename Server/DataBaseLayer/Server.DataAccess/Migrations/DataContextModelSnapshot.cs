@@ -61,14 +61,6 @@ namespace Server.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
-
-                    b.HasData(
-                        new { Id = 1, Email = "Ivanov@mail.ru", Family = "Иванов", Mname = "Иванович", Name = "Иван", Year = 25 },
-                        new { Id = 2, Email = "Petrov@mail.ru", Family = "Петров", Mname = "Петрович", Name = "Петр", Year = 24 },
-                        new { Id = 3, Email = "Nick@mail.ru", Family = "Николайченко", Mname = "Николаевич", Name = "Николай", Year = 25 },
-                        new { Id = 4, Email = "Borisov@mail.ru", Family = "Борисов", Mname = "Борисович", Name = "Сергей", Year = 30 },
-                        new { Id = 5, Email = "Antonova@mail.ru", Family = "Антонова", Mname = "Степановна", Name = "Антонина", Year = 27 }
-                    );
                 });
 
             modelBuilder.Entity("Server.Data.DbLastWork", b =>
@@ -100,7 +92,7 @@ namespace Server.DataAccess.Migrations
 
                     b.Property<string>("Result1");
 
-                    b.Property<int?>("Test");
+                    b.Property<int?>("TestId");
 
                     b.Property<int?>("VacancyId");
 
@@ -108,9 +100,32 @@ namespace Server.DataAccess.Migrations
 
                     b.HasIndex("EmployeeId");
 
+                    b.HasIndex("TestId");
+
                     b.HasIndex("VacancyId");
 
                     b.ToTable("Results");
+                });
+
+            modelBuilder.Entity("Server.Data.DbTest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name");
+
+                    b.Property<int>("Quantity");
+
+                    b.Property<int>("Right");
+
+                    b.Property<int?>("VacancyId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VacancyId");
+
+                    b.ToTable("Tests");
                 });
 
             modelBuilder.Entity("Server.Data.DbVacancy", b =>
@@ -134,6 +149,14 @@ namespace Server.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Vacancies");
+
+                    b.HasData(
+                        new { Id = 1, Education = "Высшее", Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);", Name = "Младший программист", Salary = 25000, Task = "работать с большими и сложными проектами" },
+                        new { Id = 2, Education = "Высшее", Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);", Name = "Младший программист", Salary = 25000, Task = "работать с большими и сложными проектами" },
+                        new { Id = 3, Education = "Высшее", Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);", Name = "Младший программист", Salary = 25000, Task = "работать с большими и сложными проектами" },
+                        new { Id = 4, Education = "Высшее", Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);", Name = "Младший программист", Salary = 25000, Task = "работать с большими и сложными проектами" },
+                        new { Id = 5, Education = "Высшее", Know = "опыт работы и знание особенностей одного из JS-фреймворков (Knockout, Backbone, Marionette JS, AngularJS, jQuery);", Name = "Младший программист", Salary = 25000, Task = "работать с большими и сложными проектами" }
+                    );
                 });
 
             modelBuilder.Entity("Server.Data.DbEducation", b =>
@@ -156,6 +179,17 @@ namespace Server.DataAccess.Migrations
                         .WithMany()
                         .HasForeignKey("EmployeeId");
 
+                    b.HasOne("Server.Data.DbTest", "Test")
+                        .WithMany()
+                        .HasForeignKey("TestId");
+
+                    b.HasOne("Server.Data.DbVacancy", "Vacancy")
+                        .WithMany()
+                        .HasForeignKey("VacancyId");
+                });
+
+            modelBuilder.Entity("Server.Data.DbTest", b =>
+                {
                     b.HasOne("Server.Data.DbVacancy", "Vacancy")
                         .WithMany()
                         .HasForeignKey("VacancyId");

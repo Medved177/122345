@@ -5,12 +5,53 @@
 <div class="page">
     <header class="page__header">
         <nav class="navigation main-container">
-            
+            <ul class="list">
+                <li class="list__item">
+                    @Html.ActionLink("Вакансии", "Section", "Home", null, new
+                    {
+                       @class = "link",
+                       data_ajax = "true",
+                       data_ajax_method = "GET",
+                       data_ajax_mode = "replace",
+                       data_ajax_update = "#section"
+                    })
+                </li>
+                <li class="list__item">
+                    @Html.ActionLink("Пользователь", "AddEmployeeForm", "Home", null, new
+                    {
+                       @class = "link",
+                       data_ajax = "true",
+                       data_ajax_method = "GET",
+                       data_ajax_mode = "replace",
+                       data_ajax_update = "#section"
+                    })
+                </li>
+                <li class="list__item">
+                    @Html.ActionLink("Образование", "AddEducationForm", "Home", null, new
+                    {
+                       @class = "link",
+                       data_ajax = "true",
+                       data_ajax_method = "GET",
+                       data_ajax_mode = "replace",
+                       data_ajax_update = "#section"
+                    })
+                </li>
+                <li class="list__item">
+                    @Html.ActionLink("Прошлые работы", "AddWorkForm", "Home", null, new
+                    {
+                       @class = "link",
+                       data_ajax = "true",
+                       data_ajax_method = "GET",
+                       data_ajax_mode = "replace",
+                       data_ajax_update = "#section"
+                    })
+                </li>
+            </ul>   
         </nav>
     </header>
     <main class="main-container">
-        <section class="section" id="employees">
-            @await Html.PartialAsync("Employees")
+        <section class="section" id="section">
+            @await Html.PartialAsync("Section")
         </section>
     </main>
 </div>

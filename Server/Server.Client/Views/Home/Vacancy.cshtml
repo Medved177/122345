@@ -1,4 +1,4 @@
-﻿@model Server.Contracts.PagedResult<Server.Data.DbEmployee>
+﻿@model Server.Contracts.PagedResult<Server.Data.DbVacancy>
 
 @{
     string back = "button paging__button";
@@ -21,7 +21,7 @@
 
 
 <div class="section__header">
-    <h2>Пользователи</h2>
+    <h2>Вакансии</h2>
 </div>
 <div class="list-container">
     @if (Model.Data != null)
@@ -31,11 +31,12 @@
             <article class="user-info">
                 <div class="user-info__inner">
                     <input type="hidden" value=@Model.Data[i].Id>
-                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Family" />
-                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Name" />
-                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Mname" />
-                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Year" />
-                    <input class="user-info__input" type="text" readonly value="@Model.Data[i].Email" />
+                    <input class="user-info__input" type="text" readonly value="Должность: @Model.Data[i].Name" />
+                    <input class="user-info__input" type="text" readonly value="Зарплата: @Model.Data[i].Salary" />
+                    <input class="user-info__input" type="text" readonly value="Образование: @Model.Data[i].Education" />
+                    <input class="user-info__input" type="text" readonly value="Опыт(Лет): @Model.Data[i].Experience" />
+                    <input class="user-info__input" type="text" readonly value="Требования: @Model.Data[i].Know" />
+                    <input class="user-info__input" type="text" readonly value="Задачи: @Model.Data[i].Task" />
                 </div>
             </article>
         }
@@ -52,3 +53,4 @@
         <span class="paging__info">@Model.Page из @Model.Total</span>
     </div>
 </div>
+<script src="~/js/vacancy.js"></script>

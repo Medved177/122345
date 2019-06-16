@@ -133,6 +133,14 @@
     <Compile Include="Migrations\20190529194359_start.designer.cs">
       <DependentUpon>20190529194359_start.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20190611101223_Test.cs" />
+    <Compile Include="Migrations\20190611101223_Test.designer.cs">
+      <DependentUpon>20190611101223_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20190616015250_vacancy.cs" />
+    <Compile Include="Migrations\20190616015250_vacancy.designer.cs">
+      <DependentUpon>20190616015250_vacancy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\DataContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

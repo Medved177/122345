@@ -1,29 +1,35 @@
-﻿
+﻿function ClickVacancy(event) {
+	let elem = event.currentTarget;
+	let vacancy = GetChildren(elem);
+	$("#section").load("Home/test", vacancy);
+}
 function GetChildren(elem) {
 	let children = elem.children[0].children;
-	let employee = new Employee({
-		Id: children[0].value,
-		Family: children[1].value,
-		Name: children[2].value,
-		Mname: children[3].value,
-		Year: children[4].value,
-		Email: children[5].value
+	let vacancy = new Vacancy({
+		id: children[0].value,
+		name: children[1].value,
+		salary: children[2].value,
+		education: children[3].value,
+		experience: children[4].value,
+		know: children[5].value,
+		task: children[6].value
 	});
-	return employee;
+	return vacancy;
 }
 
 function Move(page) {
-	$("#employees").load("Home/Employees?Page=" + page);
+	$("#vacancy").load("Home/Vacancy?Page=" + page);
 }
 
-class Employee {
+class Vacancy {
 
 	constructor(options) {
-		this.Id = options.id;
-		this.Family = options.Family;
-		this.Name = options.Name;
-		this.Mname = options.Mname;
-		this.Email = options.Email;
-		this.Year = options.Year;
+		this.id = options.id;
+		this.name = options.name;
+		this.salary = options.salary;
+		this.education = options.education;
+		this.experience = options.experience;
+		this.know = options.know;
+		this.task = options.task;
 	}
 }

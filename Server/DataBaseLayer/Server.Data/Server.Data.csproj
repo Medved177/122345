@@ -45,6 +45,7 @@
     <Compile Include="DbEmployee.cs" />
     <Compile Include="DbLastWork.cs" />
     <Compile Include="DbResult.cs" />
+    <Compile Include="DbTest.cs" />
     <Compile Include="DbVacancy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
